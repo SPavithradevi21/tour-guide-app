@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #1e40af; /* Tailwind blue-600 */
+  --secondary-color: #f3f4f6; /* Tailwind gray-50 */
+  --accent-color: #2563eb; /* Tailwind blue-500 */
+  --text-color-light: #ffffff;
+  --text-color-dark: #1f2937; /* Tailwind gray-800 */
 }
 
 @theme inline {
@@ -16,11 +21,40 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary-color: #60a5fa; /* Lighter Tailwind blue-400 for dark mode */
+    --secondary-color: #1f2937; /* Tailwind gray-800 */
+    --accent-color: #3b82f6; /* Tailwind blue-500 */
+    --text-color-light: #d1d5db; /* Tailwind gray-300 */
+    --text-color-dark: #ffffff;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.bg-hero {
+  background-image: url('/hero-image.jpg'); /* Replace with the hero section image */
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+a {
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--accent-color);
 }
