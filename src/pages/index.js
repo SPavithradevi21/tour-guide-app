@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className="bg-white shadow-md rounded-lg overflow-hidden text-center">
             <div className="flex justify-center">
-              <Image src="/bali.jpg" alt="Bali" width={350} height={250} />
+              <Image src="/bali.jpg" alt="Bali" width={350} height={350} />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">Bali</h3>
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
           <div className="bg-white shadow-md rounded-lg overflow-hidden text-center">
             <div className="flex justify-center">
-              <Image src="/nyc.jpg" alt="New York City" width={350} height={250} />
+              <Image src="/nyc.jpg" alt="New York City" width={350} height={450} />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">New York City</h3>
